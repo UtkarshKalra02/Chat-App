@@ -1,64 +1,106 @@
 body {
   padding: 0;
   margin: 0;
+  background-color: #f5f5f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
 }
 
 .App {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 100vw;
   height: 100vh;
   flex-direction: column;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .app-header {
   text-align: center;
-  background-color: #3b5998;
+  background-color: #4CAF50;
   color: white;
   width: 100%;
+  padding: 15px;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .app-container {
-  margin-top: 50px;
+  margin-top: 40px;
+  width: 100%;
+  max-width: 400px;
 }
 
 .room {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .room label {
   text-align: center;
-  font-size: 25px;
-  margin-bottom: 20px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #555;
 }
 
 .room input {
-  width: 200px;
-  height: 30px;
-  border: 2px solid #3b5998;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ddd;
   border-radius: 6px;
-  padding-left: 5px;
-  font-size: 20px;
+  padding-left: 10px;
+  font-size: 16px;
   text-align: center;
-  margin: 5px;
+  margin: 5px 0;
+  outline: none;
+  transition: border-color 0.3s ease;
 }
+
+.room input:focus {
+  border-color: #4CAF50;
+}
+
 .room button {
-  width: 210px;
+  width: 100%;
   height: 40px;
   border: none;
   border-radius: 6px;
-  padding-left: 5px;
-  font-size: 20px;
-  text-align: center;
-  margin: 5px;
-  background-color: #3b5998;
+  font-size: 16px;
+  margin: 10px 0;
+  background-color: #4CAF50;
   color: white;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.room button:hover {
+  background-color: #45a049;
 }
 
 .sign-out {
-  margin-top: 50px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.sign-out button {
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sign-out button:hover {
+  background-color: #4CAF50;
+  color: white;
+  border-color: #4CAF50;
 }
 
