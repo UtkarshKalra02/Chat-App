@@ -16,7 +16,7 @@ export const AppWrapper = ({ children, isAuth, setIsAuth, setIsInChat }) => {
   return (
     <div className="App">
         <div className="app-header">
-            <h1> Chat App </h1>
+            <h1>Flex Chat</h1>
         </div>
         {isAuth && (
             <div className="sign-out">
